@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    .hero-section {
+        background: linear-gradient(to right, #4e54c8, #8f94fb);
+        color: white;
+        padding: 80px 20px;
+    }
+
+        .hero-section h1, .hero-section h2 {
+            color: white;
+        }
+
+    .card-hover:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+</style>
+
+<!-- Hero Section -->
+<div class="hero-section text-center">
+    <h1 class="display-3 fw-bold">Welcome to VenueBookingSystem</h1>
+    <h2 class="lead mt-3">An easy and modern way to book venues and events</h2>
+</div>
+
+<!-- Card Navigation Section -->
+<div class="container mt-5">
+    <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm card-hover">
+                <div class="card-body text-center">
+                    <i class="bi bi-building fs-1 text-primary"></i>
+                    <h5 class="card-title mt-3">Choose Venues</h5>
+                    <p class="card-text">Browse through a list of available venues and choose the best one for your event.</p>
+                    <a href="/Venue" class="btn btn-primary mt-2">Explore Venues</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm card-hover">
+                <div class="card-body text-center">
+                    <i class="bi bi-calendar-event fs-1 text-success"></i>
+                    <h5 class="card-title mt-3">Choose Events</h5>
+                    <p class="card-text">Find exciting events that match your preferences and schedule.</p>
+                    <a href="/Event" class="btn btn-success mt-2">Browse Events</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm card-hover">
+                <div class="card-body text-center">
+                    <i class="bi bi-journal-bookmark fs-1 text-danger"></i>
+                    <h5 class="card-title mt-3">Make Bookings</h5>
+                    <p class="card-text">Confirm your selections and make secure bookings quickly and easily.</p>
+                    <a href="/Booking" class="btn btn-danger mt-2">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
